@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+[data-nextjs-scroll-focus-boundary] {
+  display: contents;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
