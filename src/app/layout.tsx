@@ -1,8 +1,10 @@
-import '../styles/globals.css';
+import '../styles/global.css';
 
-import { Inter } from '@next/font/google';
+import { Noto_Sans } from '@next/font/google';
 
-const inter = Inter({
+const notoSans = Noto_Sans({
+  weight: ['400', '500', '700'],
+  variable: '--font-noto-sans',
   subsets: ['latin'],
 });
 
@@ -12,7 +14,7 @@ interface RootLayoutProps {
 
 function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="ko" className={inter.className}>
+    <html lang="ko" className={notoSans.variable}>
       <head />
       <body>{children}</body>
     </html>
