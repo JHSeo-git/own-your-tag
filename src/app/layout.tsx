@@ -14,7 +14,7 @@ interface RootLayoutProps {
 
 function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="ko" className={notoSans.variable}>
+    <html lang="ko" data-theme="light" className={notoSans.variable}>
       <head />
       <body>{children}</body>
     </html>
