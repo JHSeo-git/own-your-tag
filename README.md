@@ -1,3 +1,31 @@
 # own your tag
 
-자시만의 태그(옷에 붙은 태그와 같은)를 만들어보세요.
+> Generate own your tag
+
+Practice for [satori](https://github.com/vercel/satori), [@vercel/og](https://www.npmjs.com/package/@vercel/og)
+
+![preview](./__docs/preview.png)
+
+## stack
+
+- next.js (appDir, edge-runtime)
+- satori
+- @vercel/og
+
+## Running locally
+
+**1. Install deps**
+
+```bash
+pnpm i
+```
+
+**2. Start dev server**
+
+```bash
+pnpm dev
+```
+
+## LICENSE
+
+[MIT](./LICENSE)
