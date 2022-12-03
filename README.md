@@ -2,7 +2,9 @@
 
 > Generate own your tag
 
-Practice for [satori](https://github.com/vercel/satori), [@vercel/og](https://www.npmjs.com/package/@vercel/og)
+https://own-your-tag.vercel.app/
+
+- Practice for [satori](https://github.com/vercel/satori), [@vercel/og](https://www.npmjs.com/package/@vercel/og)
 
 ![preview](./__docs/preview.png)
 
