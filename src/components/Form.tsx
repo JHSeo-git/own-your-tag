@@ -37,7 +37,7 @@ function Form() {
   });
 
   return (
-    <>
+    <div className="p-6 pb-10">
       <form onSubmit={onSubmit} className="p-6 rounded-xl bg-base-200 shadow-lg">
         <div className="form-control w-full">
           <label className="label">
@@ -85,7 +85,7 @@ function Form() {
           </Link>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
