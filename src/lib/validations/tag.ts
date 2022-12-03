@@ -1,6 +1,6 @@
-import * as yup from 'yup';
+import { z } from 'zod';
 
-export const tag = yup.object().shape({
-  name: yup.string().required(),
-  email: yup.string().email().required(),
+export const tag = z.object({
+  name: z.string(),
+  email: z.string().email(),
 });

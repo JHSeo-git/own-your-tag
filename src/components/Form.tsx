@@ -1,6 +1,6 @@
 'use client';
 
-import { yupResolver } from '@hookform/resolvers/yup';
+import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -27,7 +27,7 @@ function Form() {
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>({
-    resolver: yupResolver(tag),
+    resolver: zodResolver(tag),
   });
 
   const onSubmit = handleSubmit((data) => {

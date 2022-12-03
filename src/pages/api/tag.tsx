@@ -48,7 +48,7 @@ const loadFonts = async () => {
 export default async function handler(req: NextRequest) {
   try {
     const url = new URL(req.url);
-    const { email, name } = await tag.validate(Object.fromEntries(url.searchParams));
+    const { email, name } = await tag.parse(Object.fromEntries(url.searchParams));
 
     const fonts = await loadFonts();
 
@@ -65,7 +65,6 @@ export default async function handler(req: NextRequest) {
       height,
     });
   } catch (e) {
-    console.log(e);
     return new Response('Failed to generate tag', { status: 500 });
   }
 }
